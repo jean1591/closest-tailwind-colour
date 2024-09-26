@@ -13,13 +13,22 @@ export const ClosestTailwindColour = () => {
   const tailwindClosestColourRgb =
     tailwindColours[tailwindClosestColour ?? 'state-50']
 
+  const closestTailwindColourhex = rgbToHex(
+    tailwindClosestColourRgb[0],
+    tailwindClosestColourRgb[1],
+    tailwindClosestColourRgb[2]
+  )
+
   return (
     <div>
-      <p className="text-lg font-medium">Closest Tailwind colour</p>
+      <p className="text-lg font-medium">
+        Closest Tailwind colour - {tailwindClosestColour} -{' '}
+        {closestTailwindColourhex.toUpperCase()}
+      </p>
       <div
         className="h-16 w-full rounded-xl"
         style={{
-          backgroundColor: `${rgbToHex(tailwindClosestColourRgb[0], tailwindClosestColourRgb[1], tailwindClosestColourRgb[2])}`,
+          backgroundColor: closestTailwindColourhex,
         }}
       />
     </div>
