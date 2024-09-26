@@ -3,7 +3,7 @@ import { YourColour } from './YourColour'
 
 export const ColourPanel = () => {
   return (
-    <div className="space-y-4 rounded-xl border-2 border-slate-300 p-4">
+    <div className="space-y-8">
       <YourColour />
       <ClosestTailwindColour />
     </div>

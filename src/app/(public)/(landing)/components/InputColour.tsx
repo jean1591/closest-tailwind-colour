@@ -18,17 +18,20 @@ export const InputColour = () => {
   }
 
   return (
-    <div className="space-y-4 rounded-xl border-2 border-slate-300 p-4">
-      <div>
-        <p className="text-lg font-medium">Hex colour</p>
-        <input
-          onChange={(event) => handleInputHexColour(event)}
-          className="h-16 w-full rounded-xl border-2 border-slate-300 pl-2 text-xl"
-          type="text"
-          name="hex"
-          placeholder="Enter an hex colour value"
-        />
-      </div>
+    <div>
+      <p className="font-medium">Hex colour</p>
+      <p className="mt-2 text-sm text-slate-500">
+        Enter an hex colour value and find its closer value in Tailwind base
+        colours.
+      </p>
+
+      <input
+        onChange={(event) => handleInputHexColour(event)}
+        className="mt-4 h-12 w-full rounded-xl border-[1px] border-slate-300 pl-2 text-base"
+        type="text"
+        name="hex"
+        placeholder="Hex colour value"
+      />
     </div>
   )
 }

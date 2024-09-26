@@ -8,12 +8,13 @@ export const ClosestTailwindColour = () => {
 
   return (
     <div>
-      <p className="text-lg font-medium">
-        Closest Tailwind colour - {tailwindColour.name} -{' '}
-        {tailwindColour.hexValue.toUpperCase()}
+      <p className="font-medium">
+        Closest Tailwind colour - {tailwindColour.hexValue.toUpperCase()} -{' '}
+        {tailwindColour.name}
       </p>
+
       <div
-        className="h-16 w-full rounded-xl"
+        className="mt-2 h-16 w-full rounded-xl"
         style={{
           backgroundColor: tailwindColour.hexValue,
         }}

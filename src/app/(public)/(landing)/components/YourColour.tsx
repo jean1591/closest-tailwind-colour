@@ -8,11 +8,10 @@ export const YourColour = () => {
 
   return (
     <div>
-      <p className="text-lg font-medium">
-        Your colour - {colour.toUpperCase()}
-      </p>
+      <p className="font-medium">Your colour - {colour.toUpperCase()}</p>
+
       <div
-        className="h-16 w-full rounded-xl"
+        className="mt-2 h-16 w-full rounded-xl"
         style={{ backgroundColor: `${colour}` }}
       />
     </div>
