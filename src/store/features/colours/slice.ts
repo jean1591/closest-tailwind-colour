@@ -30,18 +30,14 @@ export const coloursSlice = createSlice({
     setColour: (state, action: PayloadAction<string>) => {
       state.colour = action.payload
 
-      const closestColourHex = hexToRgb(action.payload)
-      const closestColour = getClosestTailwindColour(closestColourHex)
-      const closestColourRgb = tailwindColours[closestColour]
+      const colourRgb = hexToRgb(action.payload)
+      const closestColour = getClosestTailwindColour(colourRgb)
+      const tailwindRgb = tailwindColours[closestColour]
 
       state.tailwindColour = {
         name: closestColour,
-        hexValue: rgbToHex(
-          closestColourRgb[0],
-          closestColourRgb[1],
-          closestColourRgb[2]
-        ),
-        rgbValue: closestColourRgb,
+        hexValue: rgbToHex(...tailwindRgb),
+        rgbValue: tailwindRgb,
       }
     },
   },
