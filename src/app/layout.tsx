@@ -9,9 +9,11 @@ import { classNames } from '@/utils/classNames'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const metaDescription = 'Generate this using ChatGPT'
-const titleAndDefault = 'Generate this using ChatGPT'
-const appUrl = 'https://my-app-name.jeanrobertou.com'
+const metaDescription =
+  'Instantly convert HEX colours to the nearest Tailwind CSS colour classes with our fast and easy-to-use converter. Save time in your web design projects by finding the exact Tailwind colour match, from red-50 to blue-950, in a few clicks'
+const titleAndDefault =
+  'HEX to Tailwind Colour Converter - Find Closest Tailwind Colors'
+const appUrl = 'https://closest-tailwind-colour.rb2.fr'
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +21,8 @@ export const metadata: Metadata = {
     default: titleAndDefault,
   },
   description: metaDescription,
-  keywords: 'meal, planning, food, ai',
+  keywords:
+    'Tailwind color converter, HEX to Tailwind, Tailwind CSS color classes, find Tailwind colors, web design tools, closest Tailwind color, color converter app, tailwind color match, CSS color converter',
   metadataBase: new URL(appUrl),
   openGraph: {
     title: titleAndDefault,
