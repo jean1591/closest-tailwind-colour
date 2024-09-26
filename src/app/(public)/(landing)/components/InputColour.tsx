@@ -21,8 +21,7 @@ export const InputColour = () => {
     <div>
       <p className="font-medium">Hex colour</p>
       <p className="mt-2 text-sm text-slate-500">
-        Enter an hex colour value and find its closer value in Tailwind base
-        colours.
+        Enter an hex colour value and find its closest value in Tailwind.
       </p>
 
       <input

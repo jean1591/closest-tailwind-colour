@@ -11,7 +11,7 @@ export const ColourPanel = () => {
 
   return (
     <div className="flex items-center justify-center gap-8">
-      <ColourPresenter backgroundColour={colour} label="input colour" />
+      <ColourPresenter backgroundColour={colour} label="input" />
       <ColourPresenter
         backgroundColour={tailwindColour.hexValue}
         colourLabel={tailwindColour.name}
