@@ -1,18 +1,26 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
+import { hexToRgb, rgbToHex } from '@/utils/colourConverter'
 
 import { getClosestTailwindColour } from '@/utils/distanceCalculator'
-import { hexToRgb } from '@/utils/colourConverter'
+import { tailwindColours } from './tailwindColours'
 
+interface TailwindColour {
+  name: string
+  hexValue: string
+  rgbValue: [number, number, number]
+}
 export interface ColoursSlice {
   colour: string
-  tailwindClosestColour: string
-  userColourRgb: [number, number, number]
+  tailwindColour: TailwindColour
 }
 
 const initialState: ColoursSlice = {
-  colour: '#f8fafc',
-  tailwindClosestColour: 'slate-50',
-  userColourRgb: [255, 255, 255],
+  colour: '#a7f3d0',
+  tailwindColour: {
+    name: 'emerald-200',
+    hexValue: '#a7f3d0',
+    rgbValue: [167, 243, 208],
+  },
 }
 
 export const coloursSlice = createSlice({
@@ -21,10 +29,20 @@ export const coloursSlice = createSlice({
   reducers: {
     setColour: (state, action: PayloadAction<string>) => {
       state.colour = action.payload
-      state.tailwindClosestColour = getClosestTailwindColour(
-        hexToRgb(action.payload)
-      )
-      state.userColourRgb = hexToRgb(action.payload)
+
+      const closestColourHex = hexToRgb(action.payload)
+      const closestColour = getClosestTailwindColour(closestColourHex)
+      const closestColourRgb = tailwindColours[closestColour]
+
+      state.tailwindColour = {
+        name: closestColour,
+        hexValue: rgbToHex(
+          closestColourRgb[0],
+          closestColourRgb[1],
+          closestColourRgb[2]
+        ),
+        rgbValue: closestColourRgb,
+      }
     },
   },
 })

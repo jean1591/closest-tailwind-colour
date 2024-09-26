@@ -26,15 +26,7 @@ export const InputColour = () => {
           className="h-16 w-full rounded-xl border-2 border-slate-300 pl-2 text-xl"
           type="text"
           name="hex"
-        />
-      </div>
-
-      <div>
-        <p className="text-lg font-medium">RGB colour</p>
-        <input
-          className="h-16 w-full rounded-xl border-2 border-slate-300 pl-2 text-xl"
-          type="text"
-          name="rgb"
+          placeholder="Enter an hex colour value"
         />
       </div>
     </div>
