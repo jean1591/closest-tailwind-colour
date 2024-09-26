@@ -2,6 +2,7 @@ import './globals.css'
 
 import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
+import Script from 'next/script'
 import { StoreProvider } from '@/store/StoreProvider'
 import { Toaster } from 'react-hot-toast'
 import { classNames } from '@/utils/classNames'
@@ -50,6 +51,11 @@ export default function RootLayout({
             'bg-neutral-50 text-slate-900'
           )}
         >
+          <Script
+            defer
+            src="https://analytics.rb2.fr/script.js"
+            data-website-id="fd9f21d9-33a1-4b09-832f-d2ba687c4858"
+          />
           <Toaster position="bottom-right" reverseOrder={true} />
           {children}
         </body>
