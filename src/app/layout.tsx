@@ -10,9 +10,9 @@ import { classNames } from '@/utils/classNames'
 const inter = Inter({ subsets: ['latin'] })
 
 const metaDescription =
-  'Instantly convert HEX colours to the nearest Tailwind CSS colour classes with our fast and easy-to-use converter. Save time in your web design projects by finding the exact Tailwind colour match, from red-50 to blue-950, in a few clicks'
+  'Convert HEX colours to Tailwind CSS classes instantly. Speed up your design process by finding the closest Tailwind colour match quickly and easily.'
 const titleAndDefault =
-  'HEX to Tailwind Colour Converter - Find Closest Tailwind Colors'
+  'HEX to Tailwind Colour Converter - Find Closest Tailwind colours'
 const appUrl = 'https://closest-tailwind-colour.rb2.fr'
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description: metaDescription,
   keywords:
-    'Tailwind color converter, HEX to Tailwind, Tailwind CSS color classes, find Tailwind colors, web design tools, closest Tailwind color, color converter app, tailwind color match, CSS color converter',
+    'Tailwind colour converter, HEX to Tailwind, Tailwind CSS colour classes, find Tailwind colours, web design tools, closest Tailwind colour, colour converter app, tailwind colour match, CSS colour converter',
   metadataBase: new URL(appUrl),
   openGraph: {
     title: titleAndDefault,

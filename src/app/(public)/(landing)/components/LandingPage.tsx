@@ -37,19 +37,19 @@ const Hero = () => {
     <div className={classNames(bgGradient, paddingX, 'py-12 text-white')}>
       <div>
         <h1 className="text-center text-5xl font-bold leading-none tracking-tight">
-          Convert colors to Tailwind CSS in seconds
+          Convert colours to Tailwind CSS in seconds
         </h1>
 
         <p className="mt-4 text-center text-xl font-medium">
-          Find the perfect tailwind color class from any HEX value
+          Find the perfect tailwind colour class from any HEX value
         </p>
 
         <p className="mx-auto mt-4 max-w-3xl text-center text-lg">
-          Need to match colors in your design with Tailwind’s utility classes?
-          This app makes it simple! Just input your color in HEX format, and
-          it’ll instantly find the closest Tailwind CSS color class for you. Say
-          goodbye to manually scrolling through color palettes. Speed up your
-          design process with precision!
+          Need to match colours in your design with Tailwind’s utility classes?
+          This app makes it simple! Just input your colour in HEX format, and
+          it’ll instantly find the closest Tailwind CSS colour class for you.
+          Say goodbye to manually scrolling through colour palettes. Speed up
+          your design process with precision!
         </p>
       </div>
 
@@ -93,12 +93,12 @@ const HowItWorks = () => {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         <HowItWorkItem
-          description="Enter a HEX color code."
+          description="Enter a HEX colour code."
           icon="🎨"
-          title="Input your color"
+          title="Input your colour"
         />
         <HowItWorkItem
-          description="Instantly get the nearest Tailwind CSS color class."
+          description="Instantly get the nearest Tailwind CSS colour class."
           icon="📍"
           title="Find the closest tailwind match"
         />
@@ -150,7 +150,7 @@ const Benefits = () => {
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <BenefitItem
           title="Time-saving"
-          description="Instantly convert colors without manually referencing the Tailwind documentation."
+          description="Instantly convert colours without manually referencing the Tailwind documentation."
         />
         <BenefitItem
           title="Easy to use"
@@ -158,8 +158,8 @@ const Benefits = () => {
         />
         <BenefitItem
           className="lg:col-span-2"
-          title="Accurate color matching"
-          description="Our tool finds the exact or closest Tailwind color class to match your design.
+          title="Accurate colour matching"
+          description="Our tool finds the exact or closest Tailwind colour class to match your design.
 "
         />
       </div>
@@ -198,7 +198,7 @@ const Cta = () => {
         </h2>
 
         <p className="mt-4 text-center text-xl font-medium">
-          Input your color now and see how easy it is to find the perfect
+          Input your colour now and see how easy it is to find the perfect
           Tailwind class.
         </p>
       </div>
