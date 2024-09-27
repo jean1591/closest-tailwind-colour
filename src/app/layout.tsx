@@ -57,7 +57,7 @@ export default function RootLayout({
           <Script
             defer
             src="https://analytics.rb2.fr/script.js"
-            data-website-id="fd9f21d9-33a1-4b09-832f-d2ba687c4858"
+            data-website-id="fa524adb-93ca-43b6-9857-591b290eecf1"
           />
           <Toaster position="bottom-right" reverseOrder={true} />
           {children}
