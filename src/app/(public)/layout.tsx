@@ -3,5 +3,5 @@ export default function PublicLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return <div className="mx-auto min-h-screen max-w-7xl px-4">{children}</div>
+  return <div className="mx-auto min-h-screen">{children}</div>
 }
